@@ -4,6 +4,7 @@ import com.openshift.evg.roadshow.rest.gateway.model.Backend;
 import com.openshift.evg.roadshow.rest.gateway.model.Coordinates;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -17,6 +18,6 @@ public class BackendController{
 
     @RequestMapping(method = RequestMethod.GET, produces = "application/json")
     public Backend get() {
-        return new Backend("nationalparks","Awesome National Parks", new Coordinates("47.039304", "14.505178"), 4);
+        return new Backend("nationalparks","National Park WALTER", new Coordinates("47.039304", "14.505178"), 4);
     }
 }
